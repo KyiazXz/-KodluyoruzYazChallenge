@@ -87,3 +87,37 @@ const dolmaSuresi = 1 / toplamHiz;
 
 console.log("Havuzun dolma süresi: " + dolmaSuresi + " saat");
 
+
+
+// ---------------------------------------
+
+
+// 11 challenge
+
+// 🙌🏼 Easy: Kullanıcıdan aldığınız bir sayının faktöriyelini hesaplayan kod parçacığını yazmanızı istiyorum.
+
+
+function factorial (num) {
+  // your code here
+let count = 1
+for (let i=1 ; i<=num ; i++){
+    count*=i
+}
+return count
+}
+
+
+
+// 🌟Medium:  Bir dizi oluşturup bu sayıların ortalamasını hesaplayan bir kod parçacığı yazar mısın?
+
+
+const ar = [1,2,3,4,5,6,7,8,9];
+let total = 0
+function dizi (arr) {
+  for (let i=0 ; i<arr.length ; i++){
+    total+=arr[i]
+  }
+  return total/arr.length
+}
+
+dizi(ar)

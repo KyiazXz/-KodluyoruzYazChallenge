@@ -121,3 +121,51 @@ function dizi (arr) {
 }
 
 dizi(ar)
+
+
+//  10 challange
+
+
+// 🙌🏼 Easy: Bir dizi tanımladıktan sonra bu dizinin içinden en büyük sayıyı bulan kod parçacığını yazar mısın?
+
+
+const myArray = [1, 2, 3, 5, 6, 7, 8, 9];
+
+function printArray(a) {
+  let bigger = a[0];  // Initialize 'bigger' with the first element of the array
+
+  for (let i = 1; i < a.length; i++) {
+    if (bigger < a[i]) {
+      bigger = a[i];  // Update 'bigger' if a smaller value is found
+    }
+  }
+
+  console.log(bigger);  // Print the smallest value after the loop
+}
+
+printArray(myArray);
+
+
+// 🌟Medium:  Bir dizi oluşturup içindeki sayıların en büyük ve en küçük değerlerini bulan ve ekrana yazdıran bir kod parçacığı yazar mısınız?
+
+const myArray2 = [14, 3, 27, 8, 21, 6, 35, 18];
+
+function findMinMaxNumbers(arr) {
+  let minNumber = arr[0];  // Dizinin ilk elemanıyla başlatılır
+  let maxNumber = arr[0];  // Dizinin ilk elemanıyla başlatılır
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < minNumber) {
+      minNumber = arr[i];  // Daha küçük bir sayı bulunursa minNumber güncellenir
+    }
+    if (arr[i] > maxNumber) {
+      maxNumber = arr[i];  // Daha büyük bir sayı bulunursa maxNumber güncellenir
+    }
+  }
+
+  return [minNumber, maxNumber];  // En küçük ve en büyük sayıları dizi olarak döndürür
+}
+
+const [minValue, maxValue] = findMinMaxNumbers(myArray2);
+console.log("En küçük sayı:", minValue);
+console.log("En büyük sayı:", maxValue);

@@ -169,3 +169,32 @@ function findMinMaxNumbers(arr) {
 const [minValue, maxValue] = findMinMaxNumbers(myArray2);
 console.log("En küçük sayı:", minValue);
 console.log("En büyük sayı:", maxValue);
+
+
+// 9 challenge
+
+// 🙌🏼 Easy: Kullanıcıdan aldığınız sayının tek mi çift mi olduğunu ekrana yazdıran bir kod parçacığı yazar mısın?
+
+var sayi = parseInt(prompt("Bir sayı girin:"));
+
+// Sayının tek veya çift olduğunu kontrol et
+if (sayi % 2 === 0) {
+    console.log(sayi + " çift bir sayıdır.");
+} else {
+    console.log(sayi + " tek bir sayıdır.");
+}
+
+
+// 🌟Medium: Bir dizi oluşturup içindeki çift sayıların toplamını hesaplayan bir kod parçacığı yazar mısınız?
+
+var dizi = [2, 5, 8, 10, 15, 6, 12];
+
+// Çift sayıların toplamını hesapla
+var toplam = 0;
+for (var i = 0; i < dizi.length; i++) {
+    if (dizi[i] % 2 === 0) {
+        toplam += dizi[i];
+    }
+}
+
+console.log("Dizideki çift sayıların toplamı:", toplam);

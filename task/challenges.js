@@ -197,4 +197,33 @@ for (var i = 0; i < dizi.length; i++) {
     }
 }
 
-console.log("Dizideki çift sayıların toplamı:", toplam);
+// console.log("Dizideki çift sayıların toplamı:", toplam);
+
+
+
+// 8 challenge
+
+// 🙌🏼 Easy: Kullanıcıdan aldığın sayının karesini hesaplayarak ekrana yazdıran kod parçacığını yazar mısın?
+
+function sayi(num) {
+  return Math.pow(num, 2)
+}
+
+sayi(6)
+
+
+// 🌟Medium:  Oluşturduğunuz bir dizinin medyanını hesaplayan bir kod parçacığı yazar mısınız?
+// 🗝️ Medyan: Dizideki sayıları sıralandığında ortada bulunan değer.🤗
+
+const myNewArray = [1,2,3,4,5,6,7,8,9];
+
+function medyan(arr) {
+  let total = 0
+  for (let i=0 ; i<arr.length ; i++){
+      total+=arr[i]
+  }
+
+  return total/arr.length
+}
+
+medyan(myNewArray)

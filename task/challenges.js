@@ -227,3 +227,21 @@ function medyan(arr) {
 }
 
 medyan(myNewArray)
+
+
+//  7 challenge
+
+// 🙌🏼 Easy: Kullanıcıdan alınan bir kelimenin uzunluğunu hesaplayan bir kod parçacığı yazar mısın?
+
+function NameLength (name) {
+  return name.length
+}
+NameLength("Kyiaz")
+
+// 🌟Medium:  Kullanıcıdan aldığınız bir sayının basamaklarının toplamını hesaplayan bir kod parçacığı yazar mısın?;
+
+function sayi (string) {
+  
+}
+
+

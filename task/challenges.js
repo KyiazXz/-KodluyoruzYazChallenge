@@ -238,10 +238,52 @@ function NameLength (name) {
 }
 NameLength("Kyiaz")
 
+
 // 🌟Medium:  Kullanıcıdan aldığınız bir sayının basamaklarının toplamını hesaplayan bir kod parçacığı yazar mısın?;
 
-function sayi (string) {
-  
+// Kullanıcıdan bir sayı girdisi alın
+let sayi = prompt("Bir sayı girin:");
+
+// Sayının basamaklarını toplamak için bir değişken tanımlayın
+let toplam = 0;
+
+// Sayının her bir basamağını toplama ekleyin
+while (sayi > 0) {
+    // Sayının son basamağını alın ve toplama ekleyin
+    toplam += sayi % 10;
+    
+    // Sayının son basamağını kaldırın
+    sayi = Math.floor(sayi / 10);
 }
+
+// Sonucu ekrana yazdırın
+console.log("Basamaklar toplamı:", toplam);
+
+
+
+// 5 challenge
+
+
+// 🙌🏼 Easy: Kullanıcıdan aldığın iki sayının toplamını ekrana yazdıran bir kod parçacığı yazar mısın?
+
+
+function kulanciAdi (say1, say2){
+
+  return say1 + say2
+}
+kulanciAdi(25, 60)
+
+
+
+// 🌟Medium:  Kullanıcıdan alınan bir metindeki kelime sayısını hesaplayan bir kod parçacığı yazar mısın?
+
+function kelimeSayisi (str) {
+ 
+  return str.length
+}
+
+kelimeSayisi("hello")
+
+// 💪🏻Hard: Kullanıcının girdiği bir sayı karekökten çıkıyorsa çıktığı halini eğer çıkmıyorsa karekökten tam olarak çıkmıyor hata mesajı veren kod parçacığını yazar mısın?
 
 

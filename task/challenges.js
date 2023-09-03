@@ -287,3 +287,42 @@ kelimeSayisi("hello")
 // 💪🏻Hard: Kullanıcının girdiği bir sayı karekökten çıkıyorsa çıktığı halini eğer çıkmıyorsa karekökten tam olarak çıkmıyor hata mesajı veren kod parçacığını yazar mısın?
 
 
+//  3 challenge
+
+// 🙌🏼 Easy: Bir futbol maçında 3 puanlık atışlarda 5 kez isabet edildi, 2 puanlık atışlarda ise 10 kez isabet edildi. Toplam kaç puan elde edildi?
+
+const threePoints = 3*5;
+const twoPoints = 2*10;
+
+function points (threePoints, twoPoints){
+ return threePoints + twoPoints
+
+}
+
+
+points (threePoints, twoPoints)
+
+
+// 🌟Medium:  Bir mağazada bir kitap 80 TL, bir defter 20 TL ve bir kalem 5 TL. Bir müşteri 2 kitap, 3 defter ve 4 kalem aldı. Müşteri ne kadar ödeme yapmalı?
+
+const kitap = 80 ; 
+const defter = 20;
+const kalem = 5;
+
+const alanKitap = kitap *2 ;
+const alanDefter = defter * 3 ;
+const alanKalem = defter * 4;
+
+
+function magaza (alanKitap, alanDefter, alanKalem){
+
+return alanKitap  + alanDefter + alanKalem
+}
+
+magaza(alanKitap, alanDefter, alanKalem)
+
+
+// 💪🏻Hard: Bir sınıfta 30 öğrenci bulunmaktadır. Öğrencilerden kaç farklı şekilde 4 kişi seçilebilir?😀
+
+
+

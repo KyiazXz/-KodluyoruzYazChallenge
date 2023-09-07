@@ -325,4 +325,43 @@ magaza(alanKitap, alanDefter, alanKalem)
 // 💪🏻Hard: Bir sınıfta 30 öğrenci bulunmaktadır. Öğrencilerden kaç farklı şekilde 4 kişi seçilebilir?😀
 
 
+//  son 1
 
+//  Bir kutuda 5 kırmızı, 4 yeşil ve 3 mavi top bulunuyor. Kutudan rastgele çekilen 2 topun aynı renk olma olasılığı nedir?
+
+
+const redBalls = 5;
+const greenBalls = 4;
+const blueBalls = 3;
+
+// Calculate the total number of balls in the box
+const totalBalls = redBalls + greenBalls + blueBalls;
+
+// Calculate the probability of drawing 2 red balls
+const probabilityRed = (redBalls / totalBalls) * ((redBalls - 1) / (totalBalls - 1));
+
+// Calculate the probability of drawing 2 green balls
+const probabilityGreen = (greenBalls / totalBalls) * ((greenBalls - 1) / (totalBalls - 1));
+
+// Calculate the probability of drawing 2 blue balls
+const probabilityBlue = (blueBalls / totalBalls) * ((blueBalls - 1) / (totalBalls - 1));
+
+// Calculate the total probability of drawing 2 balls of the same color
+const totalProbability = probabilityRed + probabilityGreen + probabilityBlue;
+
+console.log("Probability of drawing 2 balls of the same color:", totalProbability);
+
+
+// 🌟Medium:  Bir öğrenci kitap okuma hedefi olarak yılda 36 kitap okumayı belirledi. Eğer her ay eşit sayıda kitap okursa kaç kitap okumuş olur?
+
+
+// Yıllık kitap hedefi
+const yillikKitapHedefi = 36;
+
+// Ay sayısı
+const aySayisi = 12;
+
+// Her ay kaç kitap okunması gerektiği
+const herAyKitapSayisi = yillikKitapHedefi / aySayisi;
+
+console.log("Her ay kaç kitap okunmalı:", herAyKitapSayisi);
